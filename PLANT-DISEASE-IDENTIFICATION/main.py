@@ -1,3 +1,7 @@
+
+from download_data import download_and_extract
+
+download_and_extract()
 import streamlit as st
 import tensorflow as tf
 import numpy as np
