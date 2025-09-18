@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AgriSens</title>
+    <title>Scube</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -13,10 +13,35 @@
   </head>
 
   <body>
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+    
     <!-- navbar sections starts  -->
     <header class="header">
       <div class="logo">
-        <h1>AgriSens</h1>
+        <div class="logo-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" fill="url(#gradient1)" stroke="url(#gradient2)" stroke-width="2"/>
+            <path d="M12 20c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z" fill="white" opacity="0.9"/>
+            <path d="M16 20c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" fill="url(#gradient3)"/>
+            <circle cx="20" cy="20" r="2" fill="white"/>
+            <defs>
+              <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#11998e;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#38ef7d;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h1>Scube</h1>
       </div>
 
       <nav class="navbar">
@@ -36,7 +61,7 @@
     <section class="home" id="home">
       <div class="content">
         <h1>YOUR SMART FARMING ASSISTANT</h1>
-        <p>Smart Crops, Smart Choices with AgriSens!</p>
+        <p>Smart Crops, Smart Choices with Scube!</p>
 
         <a href="guide/index.html" class="home-btn" target="_blank "
           >Smart Farming guide</a
@@ -44,7 +69,7 @@
       </div>
 
       <div class="image">
-        <img class="image" src="images/amit-front2.jpg" alt="heading-image" />
+        <img class="image" src="images/as.jpg" alt="heading-image" />
       </div>
     </section>
 
@@ -56,7 +81,7 @@
       <div class="heading">
         <h1>Features</h1>
         <p>
-          AgriSens provides farmers with essential tools for smarter farming. It
+          Scube provides farmers with essential tools for smarter farming. It
           offers personalized crop recommendations based on soil and climate,
           helps identify plant diseases through image analysis, and provides
           real-time weather forecasts. The app also includes features for crop
@@ -77,17 +102,38 @@
         <a href="weather-forecast/index.html" class="buttonn"
           >Today's Weather Forecast</a
         >
-        <a href="developing-phase/index.html" class="buttonn"
+        <a href="http://127.0.0.1:5000" class="buttonn"
           >Fertilizer recommendation</a
         >
-        <a href="guide/index.html" class="buttonn">Smart Farming Guidance</a>
+        <a href="https://ashrutha1234.netlify.app" class="buttonn"
+           >Chat Bot</a
+        >
+        <a href="https://sush1234.netlify.app" class="buttonn"
+           >organic farming</a
+           
+        >
+        <a href="http://sushmitha1234.netlify.app" class="buttonn"
+           >market guide</a
+           
+        >
+        <a href="https://raghavendra123.netlify.app/" class="buttonn"
+           >loans/government schemes</a
+           
+        >
+        <a href="guide/index.html" class="buttonn"
+           >Smart Farming Guidance</a
+           
+        >
+
+
+
       </div>
 
       <div class="row">
         <!-- 0 Tab  -->
         <div class="image">
           <img
-            src="images/weather.jpg"
+            src="images/sid1.jpg"
             alt="crop-planning"
             class="rounded-corner-image"
           />
@@ -121,7 +167,7 @@
 
         <div class="image">
           <img
-            src="images/crop-planning.jpg"
+            src="images/sid2.jpg"
             alt="crop-planning"
             class="rounded-corner-image"
           />
@@ -132,7 +178,7 @@
         <!-- 2 Tab  -->
         <div class="image">
           <img
-            src="images/desease-dect.jpeg"
+            src="images/sid3.jpg"
             alt="Disease-Detection"
             class="rounded-corner-image"
           />
@@ -179,7 +225,7 @@
 
         <div class="image">
           <img
-            src="images/modern-farm.jpg"
+            src="images/sid4.jpg"
             alt="modern-farms"
             class="rounded-corner-image"
           />
@@ -251,34 +297,9 @@
           </a>
         </div>
 
-        <div class="box">
-          <img src="images/SUS.jpg" alt="member-2" />
-
-          <h3>Sushmitha K N</h3>
-          <p>
-            B.Tech | ECE <br />
-            EPCET
-          </p>
-          <a
-            href="https://instagram.com/gaurav_kumar__09?igshid=MzNlNGNkZWQ4Mg=="
-            target="_blank"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/gaurav-kumar-90b9b2264"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/Gauravkumar1741" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-
-        <div class="box">
-          <img src="images/S.jpg" alt="member-3" />
-          <h3>SREENATH <br /> V S</h3>
+         <div class="box">
+          <img src="images/S.jpg" alt="member-2" />
+          <h3>V S <br /> SREENATH</h3>
           <p>
             B.Tech | ECE <br />
             EPCET
@@ -297,12 +318,17 @@
           </a>
         </div>
 
-        <!-- </div> -->
+
+        
+
+       
+
+      <!-- </div> -->
 
         <!-- <div class="box-container"> -->
 
         <div class="box">
-          <img src="images/w.jpg" alt="member-4" />
+          <img src="images/w.jpg" alt="member-3" />
 
           <h3>RAGAVENDRA G B</h3>
           <p>
@@ -326,7 +352,32 @@
           </a>
         </div>
         <div class="box">
-          <img src="images/wD.jpg" alt="member-5" />
+          
+          <img src="images/SUS.jpg" alt="member-4" />
+
+          <h3>Sushmitha K N</h3>
+          <p>
+            B.Tech | ECE <br />
+            EPCET
+          </p>
+          <a
+            href="https://instagram.com/gaurav_kumar__09?igshid=MzNlNGNkZWQ4Mg=="
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gaurav-kumar-90b9b2264"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Gauravkumar1741" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+         <div class="box">
+          <img src="images/asd.jpg" alt="member-5" />
 
           <h3>ASHRUTHA</h3>
           <p>
@@ -334,13 +385,13 @@
             EPCET
           </p>
           <a
-            href="https://www.instagram.com/x_itzraghu_x?utm_source=qr&igsh=a3FoZ2Fyb3Jpdnc2"
+            href=" "
             target="_blank"
           >
             <i class="fab fa-instagram"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/raghavendra-gb-71545432a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/ashruta-challagi-3ba71a37a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
           >
             <i class="fab fa-linkedin"></i>
@@ -349,8 +400,9 @@
             <i class="fab fa-github"></i>
           </a>
         </div>
+        
         <div class="box">
-          <img src="images/wE.jpg" alt="member-6" />
+          <img src="images/jkl.jpg" alt="member-6" />
 
           <h3>JAY LAKSHMI</h3>
           <p>
@@ -417,16 +469,13 @@
 
       <div class="credit">
         © Copyright – All Rights Reserved
-        <a href="" target="_blank"><span>Team AgriSens</span> </a>
+        <a href="" target="_blank"><span>Team Scube</span> </a>
       </div>
     </section>
 
     <!-- footer section ends -->
-      <script src="script.js"></script>
-    </chat>
 
-    <!--Chat-bot-->
-
+    <!-- Scripts -->
     <script src="js/main.js"></script>
   </body>
 </html>
